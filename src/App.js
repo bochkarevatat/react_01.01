@@ -10,6 +10,15 @@ const item = {
   currency: '£'
 }
 
+const item2 ={
+  brand: 'Tiger of Moscow',
+  title: 'Ватник',
+  description: 'Ватник для прогулок',
+  descriptionFull: 'Пошит в подвалах.',
+  price: 9000,
+  currency: '₽ '
+}
+
 const App = ()=> {
   return (
     <div className='container'>
@@ -18,7 +27,7 @@ const App = ()=> {
         <div className='highlight-overlay'></div>
       </div>
       <div className='window'>
-        <ShopItemFunc item={item} />
+        <ShopItemFunc item={item2} />
       </div>
     </div>
   );

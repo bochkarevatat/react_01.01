@@ -1,5 +1,5 @@
-import PropTypes from 'prop-types';
 function ShopItemFunc(props) {
+    
     const { brand, title, description, descriptionFull, price, currency } =
       props.item;
     return (
@@ -20,15 +20,5 @@ function ShopItemFunc(props) {
     );
   }
   
-  ShopItemFunc.propTypes = {
-    item: PropTypes.exact({
-      brand: PropTypes.string.isRequired,
-      title: PropTypes.string.isRequired,
-      description: PropTypes.string.isRequired,
-      descriptionFull: PropTypes.string.isRequired,
-      price: PropTypes.number.isRequired,
-      currency: PropTypes.string.isRequired,
-    }),
-  };
-  
+ 
   export default ShopItemFunc;
